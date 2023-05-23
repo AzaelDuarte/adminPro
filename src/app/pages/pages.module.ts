@@ -6,6 +6,11 @@ import { ProgressComponent } from './progress/progress.component';
 import { NavegacionPrincipalComponent } from './navegacion-principal/navegacion-principal.component';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { ComponentsModule } from '../components/components.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+
+
 
 
 
@@ -15,11 +20,14 @@ import { AppRoutingModule } from '../app-routing.module';
     Grafica1Component,
     ProgressComponent,
     NavegacionPrincipalComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     CommonModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ComponentsModule,
   ],
   exports: [
     DashboardComponent,
