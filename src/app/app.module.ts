@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { NoPagesFoundComponent } from './no-pages-found/no-pages-found.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { NoPagesFoundComponent } from './no-pages-found/no-pages-found.component
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
